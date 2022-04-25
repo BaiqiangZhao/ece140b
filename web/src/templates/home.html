@@ -1,0 +1,61 @@
+
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Page Info -->
+    <title>Assignment 1 </title>
+    <meta name="author" content="Baiqiang Zhao">
+    <link rel="stylesheet" type="text/css" href="css/agile.css">
+  </head>
+
+  <body>
+
+    <div class='hero'>
+      <h1> TheraBot </h1>
+      <p> ECE140b Assignment 1</p>
+    </div>
+    <section class='padding-responsive'>
+     <div class='separator'>Visit Other Pages</div>
+     <div class='btn small '><a href="product.html"> Product </a> </div>
+     <div class='btn small '> <a href="KVP.html">KVP</a> </div>
+    
+    
+
+      <div class='separator'>Team Members</div>
+
+      <table class='margin-top-xl'>
+        <thead>
+          <tr>
+
+            <th class='medium'> Name </th>
+            <th class='large'> Email </th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for user in users %}
+          <tr>
+            <td> {{user[1]}} </td>
+            <td> {{user[2]}} </td>
+            
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+
+      <div class='separator'>Project Introduction</div>
+
+      
+      <p> TheraBot is a small companion bot on your desktop which can interact with what you are talk to it. It has its own character and facial expression. It also has functions like reminder and alarm clock and so on. The appearance of the bot probably looks like the image attacted below. </p>
+
+      <hr>
+      <img src="IMG.png" alt="TheraBot">
+      <div class='separator'>Assignment 3</div>
+      <p> To increase the user experience, I first resize the image to 100% which makes sure everyone can see the whole image without moving the page around. Second, I add "go home page" button which makes user easily going back to the home page. Third, I add titles for KVP and product page to remind user what page they are in.</p>
+    </section>
+  </body>
+</html>
